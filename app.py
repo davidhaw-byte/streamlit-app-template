@@ -55,3 +55,26 @@ with tab1:
                         st.info("Out of Stock")
                         time.sleep(4)
                         st.rerun()
+
+stockqty = 0
+with tab2:
+    search = st.text_input("Search Name", key= "searchbar")
+    for item in inventory:
+        stockqty += item['stock']
+        if item['name'] == search:
+            st.dataframe(item)
+    popular = None
+    lattecount = 0
+    espressocount=0
+    coldbrewcount = 0
+    mochacount = 0
+    bluemufcount = 0
+    for order in orders:
+        if order['item'] == "Espresso":
+            espressocount +=1
+        elif order['item'] == "Latte":
+            lattecount += 1
+        
+    total_items = st.text(f"Total items in Stock: {stockqty}")
+    display = st.dataframe(inventory)
+
