@@ -3,19 +3,19 @@
         "id": 1,
         "name": "Espresso",
         "price": 2.5,
-        "stock": 40
+        "stock": 39
     },
     {
         "id": 2,
         "name": "Latte",
         "price": 4.25,
-        "stock": 18
+        "stock": 15
     },
     {
         "id": 3,
         "name": "Cold Brew",
         "price": 3.75,
-        "stock": 30
+        "stock": 40
     },
     {
         "id": 4,
@@ -27,6 +27,6 @@
         "id": 5,
         "name": "Blueberry Muffin",
         "price": 2.95,
-        "stock": 16
+        "stock": 57
     }
 ]
